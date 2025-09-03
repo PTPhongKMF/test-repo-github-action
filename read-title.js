@@ -15,12 +15,12 @@ try {
   const data = JSON.parse(fileContent);
 
   // Get the value
-  const value = data?.packages?.["."]?.pull_request_header;
+  const value = data?.packages?.["."]?.["pull-request-header"];
 
   if (value) {
-    console.log(`📌 pull_request_header: "${value}"`);
+    console.log(`📌 pull-request-header: "${value}"`);
   } else {
-    console.log("⚠️  pull_request_header not found in packages[\".\"]");
+    console.log("⚠️  pull-request-header not found in packages[\".\"]");
   }
 } catch (err) {
   console.error("❌ Error reading JSON file:", err);

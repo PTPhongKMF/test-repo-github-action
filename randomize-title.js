@@ -23,7 +23,7 @@ try {
   // Step 4: Modify JSON (ensure structure exists)
   if (!data.packages) data.packages = {};
   if (!data.packages["."]) data.packages["."] = {};
-  data.packages["."].pull_request_header = randomTitle;
+  data.packages["."]["pull-request-header"] = randomTitle;
 
   // Step 5: Write back to file
   await writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
