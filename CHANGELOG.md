@@ -1,5 +1,34 @@
 # Changelog
 
+## 1.0.0 (2025-09-03)
+
+
+### Features
+
+* does title changed? ([3ca40ad](https://github.com/PTPhongKMF/test-repo-github-action/commit/3ca40ada022c56de1c95ee4ddb4f3bfab1d0437b))
+* ehe? ([5707a7c](https://github.com/PTPhongKMF/test-repo-github-action/commit/5707a7c7caee22dee8e4a44c42d0c2934fc793a3))
+* last check ([1daca7e](https://github.com/PTPhongKMF/test-repo-github-action/commit/1daca7ee1f19d966c93fce0718fb0aa7ce66c38b))
+* so it didnt work inside pkg? ([a292c82](https://github.com/PTPhongKMF/test-repo-github-action/commit/a292c8266f2b759faeb7db11e0e463292de5f2a6))
+* test PR with CLI ([ed0e409](https://github.com/PTPhongKMF/test-repo-github-action/commit/ed0e40927c97cf6743cb303f4b041f77779d45b5))
+* test random header ([db2c923](https://github.com/PTPhongKMF/test-repo-github-action/commit/db2c9230462cb7b173321f274c1c8b9aaf6cdb91))
+* weird ([ed090c9](https://github.com/PTPhongKMF/test-repo-github-action/commit/ed090c974cb4877ae35dea964a09734641bf7b99))
+* why cant work with tauri? ([58aa264](https://github.com/PTPhongKMF/test-repo-github-action/commit/58aa2642ad94bc8762da6e90bf3a4ace536ee102))
+* why it not work before ([b3841a1](https://github.com/PTPhongKMF/test-repo-github-action/commit/b3841a10e5fbe5879acc6859bf7626d3625cabe1))
+* will random ok now ([0620afc](https://github.com/PTPhongKMF/test-repo-github-action/commit/0620afc849233b880d8a9edb36aa5734d46bff52))
+* will this trigger? ([418bd46](https://github.com/PTPhongKMF/test-repo-github-action/commit/418bd467c7791b56bd9b1e9490e32fd2ada5235c))
+* work now maybe ([53838b2](https://github.com/PTPhongKMF/test-repo-github-action/commit/53838b210cc0ceb4d5b2ebb1dfeb1ff1e1407df9))
+
+
+### Bug Fixes
+
+* check why header not working ([ace2e52](https://github.com/PTPhongKMF/test-repo-github-action/commit/ace2e52e2b65f45f54b655e17cc66b7506cf910d))
+* how about a fix? ([c09a908](https://github.com/PTPhongKMF/test-repo-github-action/commit/c09a908e23629bf7c48cda3c00845e0dfbce7b30))
+
+
+### Performance Improvements
+
+* do they write perf to changelog? ([5ca761b](https://github.com/PTPhongKMF/test-repo-github-action/commit/5ca761bad3d6757c6bbd64c6f63ff9bfb14b2e30))
+
 ## [0.3.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/aethereye-v0.2.0...aethereye-v0.3.0) (2025-09-03)
 
 
