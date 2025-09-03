@@ -11,7 +11,7 @@ const filePath = resolve(__dirname, '.github/release-please-config.json');
 
 // Step 1: Create array
 const titles = ["title 1", "title 2", "title 3", "title 4", "title 5"];
-
+//asasas
 // Step 2: Pick random title
 const randomTitle = titles[Math.floor(Math.random() * titles.length)];
 
