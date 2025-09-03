@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.6.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/v0.5.0...v0.6.0) (2025-09-03)
+
+
+### Features
+
+* let see where is my component name ([a096d73](https://github.com/PTPhongKMF/test-repo-github-action/commit/a096d73a0f7302fb1875b569ccefe909e4ccf2c6))
+* no mercy ([ae91dd5](https://github.com/PTPhongKMF/test-repo-github-action/commit/ae91dd5f8b90eec4bf013f9a221d126970458472))
+
+
+### Bug Fixes
+
+* can it work ([bcd0079](https://github.com/PTPhongKMF/test-repo-github-action/commit/bcd007993a5c41e669848cf3678a42d1d76869e2))
+* not gonna? ([ba49608](https://github.com/PTPhongKMF/test-repo-github-action/commit/ba49608347c767ac34b171ef6708a6fb5fd8772d))
+* now? ([e859307](https://github.com/PTPhongKMF/test-repo-github-action/commit/e859307dc3fbb4750171ffecbe592256b6a6b9d0))
+* so it must be true? ([36dff50](https://github.com/PTPhongKMF/test-repo-github-action/commit/36dff50d168789e51247718f6d4d99aec237a5cd))
+
 ## [0.5.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/v0.4.0...v0.5.0) (2025-09-03)
 
 
