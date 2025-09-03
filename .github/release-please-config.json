@@ -11,7 +11,7 @@
 
   "packages": {
     ".": {
-      "component": "AetherEye",
+      "component": "aethereye",
 
       "release-type": "simple",
 
