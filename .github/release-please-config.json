@@ -26,7 +26,7 @@
       ],
 
       "pull-request-title-pattern": "chore(project.${scope}): release ${component} ${version} 🤖",
-      "pull-request-header": "hi",
+      "pull-request-header": "h231313",
       "component-no-space": true,
 
       "changelog-path": "CHANGELOG.md"
