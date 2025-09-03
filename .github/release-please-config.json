@@ -28,7 +28,6 @@
       ],
 
       "component-no-space": true,
-      "pull-request-header": "why it not work before?",
 
       "changelog-path": "CHANGELOG.md"
     }
