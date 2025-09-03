@@ -22,7 +22,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           # this is a built-in strategy in release-please, see "Action Inputs"
           # for more options
-          release-type: simple
+          # release-type: simple
           
           config-file: .github/release-please-config.json
           manifest-file: .github/.release-please-manifest.json
