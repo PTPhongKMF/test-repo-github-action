@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.4.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/aethereye-v0.3.0...aethereye-v0.4.0) (2025-09-03)
+
+
+### Features
+
+* does it require new pull? ([531c43c](https://github.com/PTPhongKMF/test-repo-github-action/commit/531c43c69c8ec8741056f3acc61f8b264c0485bb))
+* ehe? ([5707a7c](https://github.com/PTPhongKMF/test-repo-github-action/commit/5707a7c7caee22dee8e4a44c42d0c2934fc793a3))
+* maybe it require actual file change? ([cc4524e](https://github.com/PTPhongKMF/test-repo-github-action/commit/cc4524e6a8ccf071bab42a97e49e21623d8e2784))
+* maybe remove type in workfwlo ([a8ba0bd](https://github.com/PTPhongKMF/test-repo-github-action/commit/a8ba0bdb4c376e97b7b4b19bbada77d23b2b7605))
+* why? ([72a2115](https://github.com/PTPhongKMF/test-repo-github-action/commit/72a2115ba25c9ab477d6ea349676d92a45500bc0))
+
+
+### Performance Improvements
+
+* again ([c583638](https://github.com/PTPhongKMF/test-repo-github-action/commit/c583638912acc45ebbb1c8af0ca1425a323f2af8))
+* do they write perf to changelog? ([5ca761b](https://github.com/PTPhongKMF/test-repo-github-action/commit/5ca761bad3d6757c6bbd64c6f63ff9bfb14b2e30))
+* test ([903e14e](https://github.com/PTPhongKMF/test-repo-github-action/commit/903e14e663e6f435de1f1b718f3be114de74e61e))
+
 ## [1.1.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/v1.0.0...v1.1.0) (2025-09-03)
 
 
