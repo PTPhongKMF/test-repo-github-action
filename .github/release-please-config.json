@@ -12,7 +12,6 @@
     ".": {
       "component": "aethereye",
 
-  "pull-request-header": "123132",
       "release-type": "simple",
 
       "extra-files": [
@@ -29,6 +28,7 @@
       ],
 
       "component-no-space": true,
+      "pull-request-header": "why it not work before?",
 
       "changelog-path": "CHANGELOG.md"
     }
