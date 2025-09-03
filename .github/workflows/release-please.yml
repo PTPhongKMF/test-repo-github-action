@@ -36,6 +36,9 @@ jobs:
       - name: Create or Update Release PR
         run: npx release-please release-pr --token=${{ secrets.GITHUB_TOKEN }} --repo-url=PTPhongKMF/test-repo-github-action --config-file=.github/release-please-config.json --manifest-file=.github/.release-please-manifest.json
 
+      - name: Generate dynamic PR title
+        run: node read-title.js
+
   # This job creates the GitHub release and tag.
   github-release:
     # We only want to run this when a PR with the "autorelease: pending" label is merged.
