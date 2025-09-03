@@ -26,14 +26,3 @@ jobs:
           
           config-file: .github/release-please-config.json
           manifest-file: .github/.release-please-manifest.json
-
-          component: test workflows
-          # extra-files:
-          #   - type: json
-          #     path: src-tauri/tauri.conf.json
-          #     jsonpath: $.version
-          #   - type: toml
-          #     path: src-tauri/Cargo.toml
-          #     jsonpath: $.package.version
-          
-          changelog-path: .github/CHANGELOG.md
