@@ -1,66 +1,39 @@
-name: Release Please CLI
+# Workflow for generating CHANGELOG.md, creating a GitHub release tag, and bumping the project version.
+# Powered by https://github.com/googleapis/release-please and https://github.com/googleapis/release-please-action
+
+name: Release Please
 
 on:
   push:
     branches:
       - main
-  # pull_request:
-  #   types:
-  #     - closed
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
-  # This job creates or updates the release PR.
-  release-pr:
-    # We only want to run this on pushes to main.
-    # nif: github.event_name == 'push' && github.ref == 'refs/heads/main'
+  release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
+      - uses: googleapis/release-please-action@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          # use a PAT (personal access token) so it can trigger other workflows
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # this is a built-in strategy in release-please, see "Action Inputs"
+          # for more options
+          release-type: simple
+          
+          # config-file: .github/release-please-config.json
+          manifest-file: .github/.release-please-manifest.json
 
-      - name: Install release-please
-        run: npm install release-please
-      
-      - name: read PR title before
-        run: node read-title.js
-
-      # 👇 This is where you would add your step to dynamically modify config files.
-      - name: Generate dynamic PR title
-        run: node randomize-title.js
-
-      - name: Create or Update Release PR
-        run: npx release-please release-pr --token=${{ secrets.GITHUB_TOKEN }} --repo-url=PTPhongKMF/test-repo-github-action --config-file=.github/release-please-config.json --manifest-file=.github/.release-please-manifest.json
-
-      - name: read PR title after
-        run: node read-title.js
-
-  # This job creates the GitHub release and tag.
-  github-release:
-    # We only want to run this when a PR with the "autorelease: pending" label is merged.
-    # nif: >
-    #   github.event_name == 'pull_request' &&
-    #   github.event.action == 'closed' &&
-    #   github.event.pull_request.merged == true &&
-    #   contains(github.event.pull_request.labels.*.name, 'autorelease: pending')
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install release-please
-        run: npm install release-please
-
-      - name: Create GitHub Release
-        run: npx release-please github-release --token=${{ secrets.GITHUB_TOKEN }} --repo-url=PTPhongKMF/test-repo-github-action --config-file=.github/release-please-config.json --manifest-file=.github/.release-please-manifest.json
+          component: test workflows
+          # extra-files:
+          #   - type: json
+          #     path: src-tauri/tauri.conf.json
+          #     jsonpath: $.version
+          #   - type: toml
+          #     path: src-tauri/Cargo.toml
+          #     jsonpath: $.package.version
+          
+          changelog-path: .github/CHANGELOG.md
