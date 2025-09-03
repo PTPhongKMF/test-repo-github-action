@@ -6,7 +6,7 @@
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": false,
 
-  "include-component-in-tag": true,
+  "include-component-in-tag": false,
   "include-v-in-tag": true,
 
   "packages": {
@@ -31,7 +31,7 @@
 
       "component-no-space": true,
 
-      "pull-request-title-pattern": "chore(project): 🤖 release ${component} ${version}",
+      "pull-request-title-pattern": "chore(project): 🤖 release v${version}",
 
       "changelog-path": "CHANGELOG.md"
     }
