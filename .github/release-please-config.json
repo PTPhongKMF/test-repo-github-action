@@ -13,6 +13,7 @@
       "component": "aethereye",
 
       "release-type": "simple",
+      "pull-request-header": "hi",
 
       "extra-files": [
         {
