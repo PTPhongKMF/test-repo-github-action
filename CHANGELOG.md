@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.2.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/aethereye-v0.1.0...aethereye-v0.2.0) (2025-09-03)
+
+
+### Features
+
+* does title changed? ([3ca40ad](https://github.com/PTPhongKMF/test-repo-github-action/commit/3ca40ada022c56de1c95ee4ddb4f3bfab1d0437b))
+* last check ([1daca7e](https://github.com/PTPhongKMF/test-repo-github-action/commit/1daca7ee1f19d966c93fce0718fb0aa7ce66c38b))
+* test random header ([db2c923](https://github.com/PTPhongKMF/test-repo-github-action/commit/db2c9230462cb7b173321f274c1c8b9aaf6cdb91))
+* why cant work with tauri? ([58aa264](https://github.com/PTPhongKMF/test-repo-github-action/commit/58aa2642ad94bc8762da6e90bf3a4ace536ee102))
+* work now maybe ([53838b2](https://github.com/PTPhongKMF/test-repo-github-action/commit/53838b210cc0ceb4d5b2ebb1dfeb1ff1e1407df9))
+
+
+### Bug Fixes
+
+* check why header not working ([ace2e52](https://github.com/PTPhongKMF/test-repo-github-action/commit/ace2e52e2b65f45f54b655e17cc66b7506cf910d))
+
 ## 0.1.0 (2025-09-03)
 
 
