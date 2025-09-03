@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/v1.0.0...v1.1.0) (2025-09-03)
+
+
+### Features
+
+* why? ([72a2115](https://github.com/PTPhongKMF/test-repo-github-action/commit/72a2115ba25c9ab477d6ea349676d92a45500bc0))
+
+
+### Performance Improvements
+
+* again ([c583638](https://github.com/PTPhongKMF/test-repo-github-action/commit/c583638912acc45ebbb1c8af0ca1425a323f2af8))
+* test ([903e14e](https://github.com/PTPhongKMF/test-repo-github-action/commit/903e14e663e6f435de1f1b718f3be114de74e61e))
+
 ## 1.0.0 (2025-09-03)
 
 
