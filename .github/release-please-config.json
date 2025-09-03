@@ -6,7 +6,6 @@
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": false,
 
-  "pull-request-title-pattern": "chore${scope}: release ${component} ${version}",
 
   "packages": {
     ".": {
@@ -27,6 +26,7 @@
         }
       ],
 
+      "pull-request-title-pattern": "chore(project.${scope}): release ${component} ${version} 🤖",
       "component-no-space": true,
 
       "changelog-path": "CHANGELOG.md"
