@@ -28,6 +28,9 @@ jobs:
 
       - name: Install release-please
         run: npm install release-please
+      
+      - name: read PR title before
+        run: node read-title.js
 
       # 👇 This is where you would add your step to dynamically modify config files.
       - name: Generate dynamic PR title
@@ -36,7 +39,7 @@ jobs:
       - name: Create or Update Release PR
         run: npx release-please release-pr --token=${{ secrets.GITHUB_TOKEN }} --repo-url=PTPhongKMF/test-repo-github-action --config-file=.github/release-please-config.json --manifest-file=.github/.release-please-manifest.json
 
-      - name: Generate dynamic PR title
+      - name: read PR title after
         run: node read-title.js
 
   # This job creates the GitHub release and tag.

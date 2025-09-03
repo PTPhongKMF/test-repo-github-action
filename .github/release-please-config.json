@@ -13,6 +13,7 @@
       "component": "aethereye",
 
       "release-type": "simple",
+      "pull_request_header": ":sparkes: 🤖 this is a header",
 
       "extra-files": [
         {
