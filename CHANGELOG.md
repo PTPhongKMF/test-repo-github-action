@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/v1.1.0...v1.2.0) (2025-09-03)
+
+
+### Features
+
+* does it require new pull? ([531c43c](https://github.com/PTPhongKMF/test-repo-github-action/commit/531c43c69c8ec8741056f3acc61f8b264c0485bb))
+* maybe it require actual file change? ([cc4524e](https://github.com/PTPhongKMF/test-repo-github-action/commit/cc4524e6a8ccf071bab42a97e49e21623d8e2784))
+
 ## [1.1.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/v1.0.0...v1.1.0) (2025-09-03)
 
 
