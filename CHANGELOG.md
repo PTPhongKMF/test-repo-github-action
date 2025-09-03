@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/aethereye-v0.2.0...aethereye-v0.3.0) (2025-09-03)
+
+
+### Features
+
+* so it didnt work inside pkg? ([a292c82](https://github.com/PTPhongKMF/test-repo-github-action/commit/a292c8266f2b759faeb7db11e0e463292de5f2a6))
+* weird ([ed090c9](https://github.com/PTPhongKMF/test-repo-github-action/commit/ed090c974cb4877ae35dea964a09734641bf7b99))
+* why it not work before ([b3841a1](https://github.com/PTPhongKMF/test-repo-github-action/commit/b3841a10e5fbe5879acc6859bf7626d3625cabe1))
+* will random ok now ([0620afc](https://github.com/PTPhongKMF/test-repo-github-action/commit/0620afc849233b880d8a9edb36aa5734d46bff52))
+
 ## [0.2.0](https://github.com/PTPhongKMF/test-repo-github-action/compare/aethereye-v0.1.0...aethereye-v0.2.0) (2025-09-03)
 
 
