@@ -21,13 +21,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 👇 This is where you would add your step to dynamically modify config files.
-      # - name: Generate dynamic PR title
-      #   run: |
-      #     # Your script to read some data and patch the .releaserc.json
-      #     # or release-please-config.json file.
-      #     echo "Running custom script..."
-
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -35,6 +28,10 @@ jobs:
 
       - name: Install release-please
         run: npm install release-please
+
+      # 👇 This is where you would add your step to dynamically modify config files.
+      - name: Generate dynamic PR title
+        run: node randomize-title.js
 
       - name: Create or Update Release PR
         run: npx release-please release-pr --token=${{ secrets.GITHUB_TOKEN }} --repo-url=PTPhongKMF/test-repo-github-action --config-file=.github/release-please-config.json --manifest-file=.github/.release-please-manifest.json
