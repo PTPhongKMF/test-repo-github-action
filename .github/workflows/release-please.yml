@@ -1,0 +1,63 @@
+name: Release Please CLI
+
+on:
+  push:
+    branches:
+      - main
+  # pull_request:
+  #   types:
+  #     - closed
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  # This job creates or updates the release PR.
+  release-pr:
+    # We only want to run this on pushes to main.
+    # nif: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 👇 This is where you would add your step to dynamically modify config files.
+      # - name: Generate dynamic PR title
+      #   run: |
+      #     # Your script to read some data and patch the .releaserc.json
+      #     # or release-please-config.json file.
+      #     echo "Running custom script..."
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install release-please
+        run: npm install release-please
+
+      - name: Create or Update Release PR
+        run: npx release-please release-pr --token=${{ secrets.GITHUB_TOKEN }} --config-file=.github/release-please-config.json --manifest-file=.github/.release-please-manifest.json
+
+  # This job creates the GitHub release and tag.
+  github-release:
+    # We only want to run this when a PR with the "autorelease: pending" label is merged.
+    # nif: >
+    #   github.event_name == 'pull_request' &&
+    #   github.event.action == 'closed' &&
+    #   github.event.pull_request.merged == true &&
+    #   contains(github.event.pull_request.labels.*.name, 'autorelease: pending')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install release-please
+        run: npm install release-please
+
+      - name: Create GitHub Release
+        run: npx release-please github-release --token=${{ secrets.GITHUB_TOKEN }} --config-file=.github/release-please-config.json --manifest-file=.github/.release-please-manifest.json
