@@ -6,13 +6,13 @@
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": false,
 
-  "pull-request-header": "hi",
   "pull-request-title-pattern": "chore${scope}: release ${component} ${version}",
 
   "packages": {
     ".": {
       "component": "aethereye",
 
+  "pull-request-header": "123132",
       "release-type": "simple",
 
       "extra-files": [
